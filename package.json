@@ -1,0 +1,73 @@
+{
+  "name": "goldhand-scripts",
+  "version": "1.0.0",
+  "description": "Common scripts for my open source projects",
+  "main": "index.js",
+  "files": [
+    "dist",
+    "babel.js",
+    "eslint.js",
+    "jest.js",
+    "webpack.js"
+  ],
+  "scripts": {
+    "babel": "babel ./src -d ./dist --ignore spec.js --source-maps",
+    "build": "npm run babel",
+    "lint": "eslint src/",
+    "test": "jest",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldhand/goldhand-scripts.git"
+  },
+  "keywords": [
+    "webpack",
+    "babel",
+    "eslint",
+    "jest",
+    "boilerplate",
+    "config",
+    "template"
+  ],
+  "author": "Will Farley <a.will.farley@gmail.com> (http://www.willfarley.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldhand/goldhand-scripts/issues"
+  },
+  "homepage": "https://github.com/goldhand/goldhand-scripts#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-goldhand": "0.0.1",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "flow-bin": "^0.71.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest-cli": "^22.4.3",
+    "raf": "^3.4.0",
+    "react-test-renderer": "^16.3.2",
+    "read-pkg-up": "^3.0.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-merge": "^4.1.2",
+    "whatwg-fetch": "^2.0.4"
+  },
+  "devDependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  }
+}

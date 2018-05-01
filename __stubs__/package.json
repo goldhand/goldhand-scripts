@@ -1,0 +1,12 @@
+{
+  "name": "goldhand-scripts-stubs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "config": {
+    "entry": "entry.js",
+    "src": "src",
+    "bundle": "dist",
+    "cjs": "cjs",
+    "build": ""
+  }
+}
